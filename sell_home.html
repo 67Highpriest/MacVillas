@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell a Home - Mac Villas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="search-bar">
+                <form action="search_results.html" method="get">
+                    <input type="text" name="query" placeholder="Search for properties">
+                    <button type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="sell-home">
+            <div class="filters-container">
+                <div class="filter" onclick="toggleDropdown(this)">
+                    Property Type
+                    <div class="dropdown-content">
+                        <p>House</p>
+                        <p>Condo</p>
+                    </div>
+                </div>
+                <div class="filter" onclick="toggleDropdown(this)">
+                    Price
+                    <div class="dropdown-content">
+                        <p>Under $300,000</p>
+                        <p>$300,000 - $500,000</p>
+                    </div>
+                </div>
+                <div class="filter" onclick="toggleDropdown(this)">
+                    More
+                    <div class="dropdown-content">
+                        <p>Feature 1</p>
+                        <p>Feature 2</p>
+                    </div>
+                </div>
+                <div class="filter" onclick="toggleDropdown(this)">
+                    Saved Searches
+                    <div class="dropdown-content">
+                        <p>Saved Search 1</p>
+                        <p>Saved Search 2</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Properties for Sale</h2>
+
+            <div class="property-grid">
+                <!-- Property Item 1 -->
+                <div class="property-card">
+                    <img src="images/sample_property1.jpg" alt="Property 1">
+                    <div class="property-info">
+                        <h3>Cozy Family Home</h3>
+                        <p class="price">$250,000</p>
+                        <p>3 beds, 2 baths, 1,500 sqft</p>
+                        <p>Great starter home with a large backyard and a renovated kitchen. Located in a quiet suburb, ideal for families.</p>
+                        <button class="view-details">View Details</button>
+                    </div>
+                </div>
+
+                <!-- Property Item 2 -->
+                <div class="property-card">
+                    <img src="images/sample_property2.jpg" alt="Property 2">
+                    <div class="property-info">
+                        <h3>Spacious Condo</h3>
+                        <p class="price">$300,000</p>
+                        <p>2 beds, 1 bath, 1,200 sqft</p>
+                        <p>Modern appliances, open floor plan, and stunning views of the city skyline. Located in the heart of downtown.</p>
+                        <button class="view-details">View Details</button>
+                    </div>
+                </div>
+
+                <!-- Property Item 3 -->
+                <div class="property-card">
+                    <img src="images/sample_property3.jpg" alt="Property 3">
+                    <div class="property-info">
+                        <h3>Charming Suburban House</h3>
+                        <p class="price">$350,000</p>
+                        <p>4 beds, 3 baths, 2,300 sqft</p>
+                        <p>Spacious home with a finished basement, outdoor deck, and fenced yard. Close to schools and parks.</p>
+                        <button class="view-details">View Details</button>
+                    </div>
+                </div>
+
+                <!-- Property Item 4 -->
+                <div class="property-card">
+                    <img src="images/sample_property4.jpg" alt="Property 4">
+                    <div class="property-info">
+                        <h3>Modern Townhouse</h3>
+                        <p class="price">$400,000</p>
+                        <p>3 beds, 2.5 baths, 2,000 sqft</p>
+                        <p>Contemporary design with smart home features, garage, and rooftop terrace. Located in a vibrant, walkable neighborhood.</p>
+                        <button class="view-details">View Details</button>
+                    </div>
+                </div>
+
+                <!-- Property Item 5 -->
+                <div class="property-card">
+                    <img src="images/sample_property5.jpg" alt="Property 5">
+                    <div class="property-info">
+                        <h3>Luxury Penthouse</h3>
+                        <p class="price">$450,000</p>
+                        <p>2 beds, 2 baths, 1,800 sqft</p>
+                        <p>High-end finishes, private balcony, and panoramic views. Located in an upscale building with a fitness center and pool.</p>
+                        <button class="view-details">View Details</button>
+                    </div>
+                </div>
+
+                <!-- Property Item 6 -->
+                <div class="property-card">
+                    <img src="images/sample_property6.jpg" alt="Property 6">
+                    <div class="property-info">
+                        <h3>Ranch-Style House</h3>
+                        <p class="price">$275,000</p>
+                        <p>3 beds, 2 baths, 1,600 sqft</p>
+                        <p>Single-story home with a large lot, open kitchen, and recently updated bathrooms. Perfect for retirees or families looking for a quiet area.</p>
+                        <button class="view-details">View Details</button>
+                    </div>
+                </div>
+
+                <!-- Property Item 7 -->
+                <div class="property-card">
+                    <img src="images/sample_property7.jpg" alt="Property 7">
+                    <div class="property-info">
+                        <h3>Beachfront Villa</h3>
+                        <p class="price">$600,000</p>
+                        <p>4 beds, 4 baths, 3,000 sqft</p>
+                        <p>Stunning beachfront property with private access to the ocean, spacious living areas, and a large outdoor patio with an infinity pool.</p>
+                        <button class="view-details">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Mac Villas. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

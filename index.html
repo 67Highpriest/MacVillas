@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac Villas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="search-bar">
+                <form action="search_results.html" method="get">
+                    <input type="text" name="query" placeholder="Search for properties" required>
+                    <button type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <a href="signin.html" class="sign-in-link">
+            <img src="images/Sn.jpg" alt="Sign In" class="signin-icon">
+        </a>
+        <div class="dropdown-menu" id="dropdown-menu">
+            <button class="close-menu-button" onclick="closeMenu()">X</button>
+            <ul>
+                <li><a href="buy_home.html">Buy a Home</a></li>
+                <li><a href="sell_home.html">Sell a Home</a></li>
+                <li><a href="rent_home.html">Rent a Home</a></li>
+                <li><a href="advertise.html">Advertise</a></li>
+                <li><a href="listings.html">Listings</a></li>
+                <li><a href="help.html">Help</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home">
+            <h2>Get home recommendations.</h2>
+            <h3>Sign in for a more personalized experience</h3>
+            <button onclick="window.location.href='signin.html'">Sign In</button>
+            <img src="images/Mg.jpg" alt="Descriptive Alt Text" class="under-signin-image">
+
+            <!-- Buy a Home Section -->
+            <div class="service-block">
+                <h3>Buy a Home</h3>
+                <div class="service-content">
+                    <div class="template-space">
+                        <a href="buy_home.html"><img src="images/Bh.jpg" alt="Buy Home Template" style="max-width: 100%; height: auto;"></a>
+                    </div>
+                    <div class="text-content">
+                        <p>Find your place with an immersive photo experience and the most listings, including things you won’t find anywhere else.</p>
+                        <a href="property_images.html" target="_blank" class="browse-button">Browse homes</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rent a Home Section -->
+            <div class="service-block">
+                <h3>Rent a Home</h3>
+                <div class="service-content">
+                    <div class="template-space">
+                        <a href="rent_home.html"><img src="images/Rh.jpg" alt="Rent Home Template" style="max-width: 100%; height: auto;"></a>
+                    </div>
+                    <div class="text-content">
+                        <p>Explore available rentals with comprehensive listings and immersive visuals to find your perfect home.</p>
+                        <a href="rent_home_images.html" target="_blank" class="browse-button">Browse rentals</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sell a Home Section -->
+            <div class="service-block">
+                <h3>Sell a Home</h3>
+                <div class="service-content">
+                    <div class="template-space">
+                        <a href="sell_home.html"><img src="images/Sh.jpg" alt="Sell Home Template" style="max-width: 100%; height: auto;"></a>
+                    </div>
+                    <div class="text-content">
+                        <p>List your home with us and reach a vast audience of potential buyers through our platform.</p>
+                        <a href="sell_home_images.html" target="_blank" class="browse-button">List your home</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About Recommendations Section -->
+            <div class="recommendations-container">
+                <p class="heading">About Mac Villas Recommendations</p>
+                <p>Recommendations are based on your location and search activity, such as the homes you've viewed and saved and the filters you've used. We use this information to bring similar homes to your attention, so you don't miss out.</p>
+            </div>
+        </section>
+    </main>
+
+    <hr class="divider">
+
+    <!-- Accessibility Statement -->
+    <p class="accessibility-statement">
+        Mac Villas Group is committed to ensuring digital accessibility for individuals with disabilities. We are continuously working to improve the accessibility of our web experience for everyone, and we welcome feedback and accommodation requests. If you wish to report an issue or seek an accommodation, <a href="#" id="chatLink" class="contact-link">please let us know</a>.
+    </p>
+
+    <!-- Chatbot Container -->
+    <div id="chatbot" class="chatbot-container">
+        <div class="chatbot-header">
+            <span>Chat with Us</span>
+            <button id="closeChatbot" class="chatbot-close-btn">&times;</button>
+        </div>
+        <div class="chatbot-body" id="chatBody">
+            <!-- Chat messages will appear here -->
+        </div>
+        <div class="chatbot-footer">
+            <input type="text" id="userInput" placeholder="Type your message...">
+            <button id="sendMsg" class="send-msg-btn">Send</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <!-- Services Section -->
+            <div class="services">
+                <h3>Our Real Estate Services</h3>
+                <p>We provide a comprehensive range of real estate services, including property buying, selling, rentals, and property management to ensure seamless experiences for all our clients.</p>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <p>Contact us: +233 26 248 3480</p>
+                <p>Email: <a href="mailto:info@macvillas.com">info@macvillas.com</a></p>
+            </div>
+
+            <!-- Social Media Icons -->
+            <div class="social-icons">
+                <a href="https://twitter.com/your_twitter_handle" target="_blank" title="Twitter">
+                    <i class="fab fa-twitter" style="color: #1DA1F2;"></i>
+                </a>
+                <a href="https://facebook.com/your_facebook_page" target="_blank" title="Facebook">
+                    <i class="fab fa-facebook" style="color: #1877F2;"></i>
+                </a>
+                <a href="https://instagram.com/your_instagram_handle" target="_blank" title="Instagram">
+                    <i class="fab fa-instagram" style="background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); -webkit-background-clip: text; color: transparent;"></i>
+                </a>
+                <a href="https://linkedin.com/your_linkedin_profile" target="_blank" title="LinkedIn">
+                    <i class="fab fa-linkedin" style="color: #0077B5;"></i>
+                </a>
+                <a href="https://youtube.com/your_youtube_channel" target="_blank" title="YouTube">
+                    <i class="fab fa-youtube" style="color: #FF0000;"></i>
+                </a>
+            </div>
+
+            <!-- Google Maps Icon -->
+            <div class="map-icon">
+                <a href="https://www.google.com/maps/search/?api=1&query=5.6037,-0.1870" target="_blank" title="Find us on Google Maps">
+                    <i class="fas fa-map-marker-alt" style="color: #4285F4;"></i>
+                </a>
+            </div>
+
+            <!-- Copyright -->
+            <p>&copy; 2024 Mac Villas. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Font Awesome CDN for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>

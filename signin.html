@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - Mac Villas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="signin.css"> <!-- Link to the sign-in CSS file -->
+</head>
+<body>
+    <header>
+        <h1></h1>
+    </header>
+
+    <main>
+      <section class="real-estate-info">
+    <h2>Your Gateway to Exceptional Properties</h2>
+    <p>
+        At Mac Villas, we are dedicated to helping you find your dream home. 
+        Whether you’re looking to buy, sell, or rent, our extensive listings 
+        and expert guidance ensure a seamless real estate experience. 
+        Join us in discovering the finest properties that suit your lifestyle.
+    </p>
+</section>
+        <div class="sign-in-section">
+            <form action="login_processing.html" method="post">
+                <h3>Sign In</h3>
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <div class="remember-me">
+                    <input type="checkbox" name="remember" id="remember">
+                    <label for="remember">Remember Me</label>
+                </div>
+                <select name="country" required>
+                    <option value="" disabled selected>Select your country</option>
+                    <option value="Ghana">Ghana</option>
+                    <option value="United States">United States</option>
+                    <option value="Canada">Canada</option>
+                    <option value="United Kingdom">United Kingdom</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Germany">Germany</option>
+                    <option value="France">France</option>
+                    <option value="Italy">Italy</option>
+                    <option value="Spain">Spain</option>
+                    <option value="Netherlands">Netherlands</option>
+                    <option value="India">India</option>
+                    <option value="Nigeria">Nigeria</option>
+                    <option value="South Africa">South Africa</option>
+                    <option value="Brazil">Brazil</option>
+                    <option value="Mexico">Mexico</option>
+                    <option value="Japan">Japan</option>
+                    <option value="China">China</option>
+                    <option value="Russia">Russia</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="Sweden">Sweden</option>
+                    <option value="Norway">Norway</option>
+                    <option value="Finland">Finland</option>
+                    <option value="Denmark">Denmark</option>
+                    <option value="Ireland">Ireland</option>
+                    <option value="Belgium">Belgium</option>
+                    <option value="Switzerland">Switzerland</option>
+                    <option value="New Zealand">New Zealand</option>
+                    <option value="Singapore">Singapore</option>
+                    <option value="Malaysia">Malaysia</option>
+                    <option value="Philippines">Philippines</option>
+                    <option value="Thailand">Thailand</option>
+                    <option value="Vietnam">Vietnam</option>
+                </select>
+                <button type="submit">Log In</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 Mac Villas. All rights reserved.</p>
+    </footer>
+</body>
+</html>

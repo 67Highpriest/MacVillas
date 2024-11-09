@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent a Home - Mac Villas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="search-bar">
+                <form action="search_results.html" method="get">
+                    <input type="text" name="query" placeholder="Search for properties">
+                    <button type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="rent-home">
+            <div class="filters-container">
+                <div class="filter" onclick="toggleDropdown(this)">
+                    Property Type
+                    <div class="dropdown-content">
+                        <p>Apartment</p>
+                        <p>House</p>
+                    </div>
+                </div>
+                <div class="filter" onclick="toggleDropdown(this)">
+                    Price
+                    <div class="dropdown-content">
+                        <p>Under $1,000</p>
+                        <p>$1,000 - $2,000</p>
+                    </div>
+                </div>
+                <div class="filter" onclick="toggleDropdown(this)">
+                    More
+                    <div class="dropdown-content">
+                        <p>Feature 1</p>
+                        <p>Feature 2</p>
+                    </div>
+                </div>
+                <div class="filter" onclick="toggleDropdown(this)">
+                    Saved Searches
+                    <div class="dropdown-content">
+                        <p>Saved Search 1</p>
+                        <p>Saved Search 2</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Properties for Rent</h2>
+
+            <div class="property-grid">
+                <!-- Property Card 1 -->
+                <div class="property-card">
+                    <img src="images/sample_property1.jpg" alt="Property 1">
+                    <div class="property-info">
+                        <h3>Modern Apartment</h3>
+                        <p class="price">$800/month</p>
+                        <p>1 bed, 1 bath, 700 sqft</p>
+                        <p>Cozy apartment with a city view, located near shopping centers and parks.</p>
+                        <button class="view-details">View Details</button>
+                    </div>
+                </div>
+
+                <!-- Property Card 2 -->
+                <div class="property-card">
+                    <img src="images/sample_property2.jpg" alt="Property 2">
+                    <div class="property-info">
+                        <h3>Spacious Family Home</h3>
+                        <p class="price">$1,200/month</p>
+                        <p>3 beds, 2 baths, 1,500 sqft</p>
+                        <p>Family-friendly neighborhood with a large backyard and two-car garage.</p>
+                        <button class="view-details">View Details</button>
+                    </div>
+                </div>
+
+                <!-- Property Card 3 -->
+                <div class="property-card">
+                    <img src="images/sample_property3.jpg" alt="Property 3">
+                    <div class="property-info">
+                        <h3>Suburban House</h3>
+                        <p class="price">$1,500/month</p>
+                        <p>3 beds, 2 baths, 1,800 sqft</p>
+                        <p>Recently renovated home with spacious rooms and a covered porch.</p>
+                        <button class="view-details">View Details</button>
+                    </div>
+                </div>
+
+                <!-- Property Card 4 -->
+                <div class="property-card">
+                    <img src="images/sample_property4.jpg" alt="Property 4">
+                    <div class="property-info">
+                        <h3>Luxury Condo</h3>
+                        <p class="price">$2,000/month</p>
+                        <p>2 beds, 2 baths, 1,300 sqft</p>
+                        <p>High-rise condo with city skyline views, gym access, and a rooftop pool.</p>
+                        <button class="view-details">View Details</button>
+                    </div>
+                </div>
+
+                <!-- Property Card 5 -->
+                <div class="property-card">
+                    <img src="images/sample_property5.jpg" alt="Property 5">
+                    <div class="property-info">
+                        <h3>Beachside Villa</h3>
+                        <p class="price">$2,500/month</p>
+                        <p>4 beds, 3 baths, 2,500 sqft</p>
+                        <p>Beautiful villa with beach access, private pool, and large outdoor patio.</p>
+                        <button class="view-details">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Mac Villas. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
